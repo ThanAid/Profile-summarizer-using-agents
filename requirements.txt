@@ -1,0 +1,6 @@
+langchain
+langchain-community
+langchainhub
+black
+python-dotenv
+langchain-ollama
