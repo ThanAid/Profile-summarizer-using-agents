@@ -1,5 +1,7 @@
 # Profile Summarizer Using Agents
-![Demo](pics/demo.gif)
+<div align="center">
+  <img src="pics/demo.gif" alt="Demo" width="800"/>
+</div>
 
 ## Overview
 
