@@ -21,7 +21,7 @@ This Project Focuses on utilizing `small` Opensource LLMS like `llama3 8B` and r
 
 1. **Clone the repository**:
     ```sh
-    git clone https://github.com/yourusername/Profile-summarizer-using-agents.git
+    git clone https://github.com/ThanAid/Profile-summarizer-using-agents.git
     cd Profile-summarizer-using-agents
     ```
 
