@@ -4,3 +4,4 @@ langchainhub
 black
 python-dotenv
 langchain-ollama
+streamlit==1.39.0

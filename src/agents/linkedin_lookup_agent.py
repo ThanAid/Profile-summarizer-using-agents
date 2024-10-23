@@ -10,6 +10,7 @@ from tools.tools import get_profile_url_tavily, extract_urls_with_regex
 
 load_dotenv()
 
+
 def lookup(name: str) -> str:
     llm = ChatOllama(model="llama3", temperature=0)
     template = """given the full name {name_of_person} I want you to get me a link to their LinkedIn profile page.
@@ -33,7 +34,11 @@ def lookup(name: str) -> str:
     react_prompt = hub.pull("hwchase17/react")
     agent = create_react_agent(llm=llm, tools=tools_for_agent, prompt=react_prompt)
     agent_executor = AgentExecutor(
-        agent=agent, tools=tools_for_agent, verbose=True, handle_parsing_errors=True
+        agent=agent,
+        tools=tools_for_agent,
+        verbose=True,
+        handle_parsing_errors=True,
+        max_iterations=10,
     )
 
     result = agent_executor.invoke(
